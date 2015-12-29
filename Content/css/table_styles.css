@@ -1,0 +1,544 @@
+.table
+{
+    border-collapse: collapse; /*border: 1px solid #03476F;*/
+    font: normal 13px;
+    color: #363636;
+    background: #fff;
+    line-height: 18px;
+}
+
+.table caption
+{
+    text-align: center;
+    font: bold 18px arial, helvetica, sans-serif;
+    background: transparent;
+    padding: 6px 4px 8px 0px;
+    color: #03476F;
+    text-transform: uppercase;
+}
+.table td, .table th
+{
+    border-bottom: 1px solid #f0efef; /*  border: 1px solid #03476F;*/
+    padding: .4em;
+}
+
+.table thead th, tfoot th
+{
+    font: bold 11px verdana, arial, helvetica, sans-serif;
+    /*border: 1px solid #03476F;*/
+    text-align: left;
+    background: #4591AD;
+    color: #FFFFFF;
+    padding-top: 3px;
+}
+.table tbody td a
+{
+    background: transparent;
+    text-decoration: none;
+    color: #0477b7;
+}
+.table tbody td a:hover
+{
+    text-decoration: underline;
+}
+.table tbody th a
+{
+    font: normal 11px verdana, arial, helvetica, sans-serif;
+    background: transparent;
+    text-decoration: none;
+    font-weight: normal;
+    color: #363636;
+}
+.table tbody th a:hover
+{
+    background: transparent;
+    color: #363636;
+}
+.table tbody th, tbody td
+{
+    /*  vertical-align: top;*/
+    text-align: left;
+}
+.table tfoot td
+{
+    border-top: 2px solid #03476F;
+    /*background: #4591AD;*/
+    padding-top: 3px;
+    color: #000000;
+}
+.table .odd
+{
+    background: #AEE239;
+}
+.table tbody tr:hover
+{
+    background: #f2f2f2;
+    border-bottom: 1px solid #03476F;
+    color: #333333;
+}
+.table tbody tr:hover th, tbody tr.odd:hover th
+{
+    background: #FFD800;
+    color: #FFFFFF;
+}
+
+.table tr.table_tittle
+{
+    background: #4b75aa url(../images/bg-table-title.gif) repeat-x left top;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.table tr.table_tittle a
+{
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.table tr.table_tittle a:hover
+{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.table tr.table_tittle:hover
+{
+    background: #4b75aa url(../images/bg-table-title.gif) repeat-x left top;
+    color: #FFFFFF;
+}
+td.BetTypeLimitLabel
+{
+    width: 180px;
+    text-align: right;
+}
+.table .bold
+{
+    font-weight: bold;
+    color: #5f5f5f;
+}
+.table td.bold span
+{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.red
+{
+    font-weight: bold;
+    color: #ca0610;
+}
+
+.blue
+{
+    font-weight: bold;
+    color: #3175be;
+}
+
+
+.red_CAPS
+{
+    font-weight: normal;
+    font-size: 14px;
+    color: #ca0610;
+    text-transform: uppercase;
+}
+.green
+{
+    font-weight: bold;
+    color: #009900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.hor_list ul
+{
+    list-style-type: none;
+    text-align: right;
+}
+
+.hor_list li
+{
+    display: inline;
+    margin: 0 10px 0 0;
+}
+
+.vertical_list ul
+{
+    list-style-type: none;
+    text-align: right;
+}
+
+.vertical_list li
+{
+    margin: 0 10px 10px 0;
+    list-style-type: none;
+}
+
+.lockSign
+{
+    cursor: pointer;
+}
+
+.showPointer
+{
+    cursor: pointer;
+}
+
+.link a
+{
+    text-decoration: none;
+    color: #0075b5;
+}
+
+.link a:hover
+{
+    text-decoration: underline;
+}
+
+/*----------------------- COUNTDOWN Raffle --------------------------*/
+
+.countDownBox
+{
+    width: 340px;
+    height: 82px;
+    float: left;
+    background-color: #fafafa;
+    border: solid #e0e0e0 1px;
+    margin: 30px 0 40px 100px;
+    padding: 13px 0 0 43px;
+}
+
+/*----------------------- Winner Box --------------------------*/
+
+.winnerBox
+{
+    width: 382px;
+    position: relative;
+    clear: both;
+    background-color: #FFF;
+    padding: 2px;
+}
+.winnerBox-header
+{
+    width: 374px;
+    height: 26px;
+    clear: both;
+    background: #2573be url(../../images/winner-shapes.gif) no-repeat right top;
+    padding-top: 6px;
+    padding-left: 8px;
+}
+.winnerBox-header h1
+{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.winnerBox-details
+{
+    width: 364px;
+    position: relative;
+    float: left;
+    background-color: #fff;
+}
+.winnerBox-details img
+{
+    padding-top: 11px;
+}
+
+/*-----------------------View Raffle --------------------------*/
+a.aprobar
+{
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    padding-left: 20px;
+    background: url(../../images/check_llt.gif) no-repeat left top;
+}
+
+a.aprobar:hover
+{
+    text-decoration: underline;
+}
+
+a.rechazar
+{
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    padding-left: 20px;
+    background: url(../../images/cross.gif) no-repeat left top;
+}
+
+a.rechazar:hover
+{
+    text-decoration: underline;
+}
+
+a.edit
+{
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    padding-left: 20px;
+    background: url(../../images/pencil.gif) no-repeat left top;
+}
+
+a.edit:hover
+{
+    text-decoration: underline;
+}
+
+
+/*---------------------- Paging -----------------------------------*/
+.paging
+{
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.paging ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+    float: left;
+}
+a.navDisable
+{
+    text-decoration: none;
+    color: #0189aa;
+    padding: 5px 10px;
+    font-size: 13px !important;
+}
+
+a.navNext
+{
+    text-decoration: none;
+    background: url(../images/blue-arrow.gif) no-repeat right 7px;
+    color: #0189aa;
+    padding: 5px 20px 5px 10px;
+    font-size: 13px !important;
+}
+a.navPrev
+{
+    text-decoration: none;
+    background: url(../images/blue-arrow.gif) no-repeat 2px -22px;
+    color: #0189aa;
+    padding: 5px 10px 5px 22px;
+    font-size: 13px !important;
+}
+
+a.navNext:hover, a.navPrev:hover
+{
+    color: #104994;
+}
+
+
+.paging li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+.paging a.link
+{
+    color: #292929;
+    text-decoration: none;
+    display: inline;
+    padding: 7px 10px;
+    background: none !important;
+    font-size: 13px !important;
+}
+
+.paging a.link:hover
+{
+    background-color: #727070 !important;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.paging li.selected
+{
+    background-color: #727070;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline;
+    padding: 7px 10px;
+}
+
+/*------------------------------ LINEAS ------------------------------------------------------------------------*/
+#lineas
+{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+}
+#lineas th
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 8px;
+}
+#lineas td
+{
+    color: #000;
+    padding: 3px;
+}
+#lineas .alt
+{
+    background: #fff3c3 none repeat scroll 0 0;
+    border-bottom: solid #f3e197 1px;
+    border-top: solid #f3e197 1px;
+}
+#ver-zebra
+{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0 20px 20px;
+    text-align: left;
+}
+
+
+#lineas th
+{
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    color: #003399;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 8px 15px;
+}
+
+#lineas td
+{
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    color: #000;
+    padding: 4px 7px;
+}
+
+#lineas td a
+{
+    color: #3e6fa3;
+    text-decoration: none;
+}
+
+#lineas td a:hover
+{
+    text-decoration: underline;
+}
+
+#lineas tr.lineas_tittle
+{
+    background: #465465;
+    font-weight: bold;
+}
+#lineas tr.lineas_tittle td, #lineas tr.lineas_tittle th
+{
+    color: #fff !important;
+    border-left: 1px solid #313b47;
+    border-right: 1px solid #313b47;
+    border-bottom: 1px solid #313b47;
+}
+
+
+#lineas td.noRightBorder
+{
+    border-right: none;
+}
+
+#lineas td.noLeftBorder
+{
+    border-left: none;
+}
+
+/*------------------------------ Error Message -----------------------------------------------------*/
+
+#error-Message
+{
+    width: 584px;
+    position: relative;
+    float: left;
+    margin-left: 52px;
+    background: url(../images/no-available.gif) no-repeat left top;
+    padding-top: 200px;
+}
+
+#error-Message a.link
+{
+    text-decoration: none;
+    color: #13569b;
+    font-size: 14px;
+    margin-left: 132px;
+    margin-top: 200px;
+}
+
+#error-Message a.link:hover
+{
+    text-decoration: underline;
+}
+
+#error-Message p
+{
+    margin-top: 15px;
+    margin-left: 132px;
+    margin-bottom: 5px;
+}
+
+.error-form
+{
+    width: 425px;
+    position: relative;
+    float: left;
+    margin-left: 132px;
+}
+
+.error-form input, .error-form textarea
+{
+    width: 350px;
+    padding: 3px;
+    border: solid 1px #a6a6a6;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.error-form table td
+{
+    padding-bottom: 9px;
+}
+
+#report
+{
+    overflow: auto;
+}
+
+/*------------------------------ Profiles -----------------------------------------------------*/
+#profileDetails Input.value
+{
+    width: 50px;
+}
+
+#profileDetails td.valueHeader
+{
+    width: 60px;
+    text-align: center;
+}
+
+#profileDetails td.productHeader
+{
+    width: 110px;
+}
+
+#profileDetails td.lotteryHeader
+{
+    width: 150px;
+}

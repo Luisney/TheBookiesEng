@@ -1,0 +1,27 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/Main.Master" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Assets" runat="server">
+    <script src="/Scripts/utils.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.blockUI.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function blockScreen() {
+            $.blockUI({ message: 'Espere un momento ...', css: { top: '40%', padding: '15px', fontWeight: 'Bold', fontSize: '12pt' } });
+        } 
+        function unBlockScreen() {
+            $.unblockUI();
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="Assets" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+<asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContextMenu" runat="server">
+    <% Html.RenderPartial("ContextMenu"); %>
+</asp:Content>

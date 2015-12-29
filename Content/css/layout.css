@@ -1,0 +1,1577 @@
+@charset "utf-8";
+
+body
+{
+    background: #ebf4fb url(../images/bg.jpg) repeat-x left top;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+p, h1, h2, h3, h4
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1
+{
+    color: #e67411;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0;
+    line-height: normal;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+h2
+{
+    color: #e67411;
+    font-size: 22px;
+    font-weight: normal;
+    margin: 0;
+    line-height: normal;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+h5, h2 span
+{
+    color: #5f6266;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    line-height: normal;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+a, a:visited
+{
+    color: #0B3061;
+}
+
+p span.LightTitle
+{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: White;
+}
+
+fieldset h4
+{
+    background: #4b75aa url(../images/bg-table-title.gif) repeat-x left top !important;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: left;
+    padding: 0.4em;
+    margin-bottom: 15px;
+}
+
+fieldset
+{
+    border: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.shapes
+{
+    width: 100%;
+    position: relative;
+    background: url(../images/shapes.jpg) no-repeat center top;
+    float: left;
+}
+
+
+.centered
+{
+    /* To center the layout */
+    width: 966px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper
+{
+    width: 966px;
+    position: relative;
+    clear: both;
+}
+
+.centerWrapper
+{
+    width: 966px;
+    position: relative;
+    float: left;
+    margin-top: 8px;
+    background: url(../images/curves-center.gif) repeat-y left top;
+}
+
+.centerWrapper .top
+{
+    width: 966px;
+    position: relative;
+    background: url(../images/curves-top.gif) no-repeat left top;
+    float: left;
+}
+.centerWrapper .bot
+{
+    width: 966px;
+    min-height: 500px;
+    position: relative;
+    background: url(../images/curves-bot.gif) no-repeat left bottom;
+    float: left;
+}
+
+#logo
+{
+    width: 264px;
+    height: 64px;
+    padding: 39px 0 15px 12px;
+    float: left;
+}
+
+img
+{
+    border: none;
+}
+
+.clear
+{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.leftBorder{
+    border-left: 1px dashed #999;
+}
+/*-------- Top Links ------------*/
+
+#topLinks
+{
+    width: 412px;
+    position: relative;
+    float: right;
+    padding-top: 50px;
+}
+
+#topLinks ul
+{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#topLinks li
+{
+    display: inline;
+    color: #fff;
+    margin: 2px 1px;
+}
+
+#topLinks li a
+{
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 0;
+    padding: 0 15px 0 10px;
+}
+
+#topLinks li a:hover
+{
+    text-decoration: underline;
+}
+
+#topLinks .noBorder
+{
+    border-right: none;
+}
+
+/*------------------------ FOOTER -------------------------------------------------*/
+
+#footer
+{
+    width: 957px;
+    height: 27px;
+    float: left;
+    padding-top: 11px;
+    padding-left: 9px;
+}
+
+#footer a
+{
+    text-decoration: none;
+    color: #0477B7;
+}
+
+#footer a:hover
+{
+    text-decoration: underline;
+}
+
+/*------------------------ Vertical Navigation -------------------------------------------------*/
+
+#accordion h3 a
+{
+    text-decoration: none;
+    color: #2b6d8e;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    line-height: normal;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0 8px 40px !important;
+}
+
+#accordion .ui-accordion .ui-accordion-content
+{
+    border-top: 0 none;
+    display: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: auto;
+    padding: 0 !important;
+    position: relative;
+    top: 0px !important;
+}
+
+.toogleLink-closed
+{
+    background: transparent url(../images/demo-spindown-closed.gif) no-repeat scroll left center;
+    padding-left: 10px;
+}
+
+.toogleLink-open
+{
+    background: transparent url(../images/demo-spindown-open.gif) no-repeat scroll left center;
+    padding-left: 10px;
+}
+
+/*--- Home Item ----*/
+
+h3.home
+{
+    background: url(../images/icon-tools.gif) no-repeat -122px 4px;
+    border-bottom: solid #d2d2d2 1px;
+    border-top: solid #fff 1px;
+}
+
+h3.home:hover
+{
+    cursor: pointer;
+}
+
+/*--- Config Item ---*/
+
+h3.config
+{
+    background: url(../images/icon-tools.gif) no-repeat -67px -44px;
+    border-bottom: solid #d2d2d2 1px;
+    border-top: solid #fff 1px;
+}
+
+h3.config:hover
+{
+    cursor: pointer;
+}
+
+/*--- Config Perfil---*/
+
+h3.perfil
+{
+    background: url(../images/icon-tools.gif) no-repeat -15px -93px;
+    border-bottom: solid #d2d2d2 1px;
+    border-top: solid #fff 1px;
+}
+
+h3.perfil:hover
+{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Fixing the accordion */
+#accordion ul
+{
+    list-style: none;
+    margin: 0 0 0 -40px;
+}
+
+#accordion .ui-accordion-header
+{
+    border-right: 0 none;
+    border-left: 0 none;
+}
+
+#accordion .ui-accordion-content
+{
+    border-top: 0 none;
+    border-bottom: 0 none;
+    border-right: 0 none;
+    border-left: 0 none;
+}
+
+#accordion .ui-icon
+{
+    display: none;
+}
+
+#accordion ul li a
+{
+    text-decoration: none;
+    color: #3c3c3c;
+    line-height: 28px;
+    padding-left: 20px;
+    display: block;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+#accordion ul li a:hover
+{
+    text-decoration: none;
+    color: #fff;
+    background: #7c8b9a;
+}
+
+#accordion ul li.selected a
+{
+    background: #7c8b9a;
+    color: #FFFFFF;
+}
+
+.bg-items
+{
+    background: url(../images/bg-items.gif) repeat-y right top;
+}
+
+.datePicker
+{
+    width: 80px;
+}
+
+/*------------------------ Horizontal Navigation -------------------------------------------------*/
+
+#menu
+{
+    width: 966px;
+    height: 38px;
+    float: left;
+    background: #102b55 url(../images/menu-rep.gif) repeat-x left top;
+    color: #FFFFFF;
+}
+
+#menu .left
+{
+    width: 966px;
+    height: 38px;
+    float: left;
+    background: url(../images/left-corner.gif) no-repeat left top;
+}
+
+#menu .right
+{
+    width: 966px;
+    height: 38px;
+    float: left;
+    background: url(../images/right-corner.gif) no-repeat right top;
+}
+
+
+
+/*------------------------ Content -------------------------------------------------------------*/
+
+.content
+{
+    width: 703px;
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    padding: 14px 20px 20px 20px;
+}
+
+#reporte
+{
+    width: 345px;
+    height: 301px;
+    float: left;
+    overflow: auto;
+}
+
+.gray
+{
+    background: #f0f0f0;
+    border-bottom: 1px solid #dbdbdb !important;
+}
+
+.noBorder td
+{
+    border-bottom: 1px solid #FFF !important;
+}
+
+.noHover tr:hover
+{
+    background-color: #FFFFFF !important;
+}
+
+.boderBot
+{
+    border-bottom: solid 1px #dbdbdb;
+}
+
+.largeSelect
+{
+    width: 202px;
+    border: solid1px #b3b3b3;
+}
+
+.largeTextField
+{
+    width: 196px;
+}
+
+/*------------------------ Matchups -------------------------------------------------------------*/
+
+.matchups
+{
+    width: 900px;
+    position: relative;
+    display: block;
+    float: left;
+    border: solid 1px #c7c7c7;
+    margin-bottom: 15px;
+    padding: 7px 7px 7px 7px;
+}
+
+.disabled-matchup
+{
+    background-color: #F0F0F0;
+}
+
+.blueBox
+{
+    width: 569px; /*height:153px;*/
+    position: relative;
+    float: left;
+    background: #2f5a8f;
+    margin: 6px 0 0 6px;
+    padding-bottom: 9px;
+}
+
+.blueBox .noMargin
+{
+    margin-left: 0 !important;
+    margin-top: 13px;
+}
+
+.darkBox
+{
+    width: 247px; /*height:126px;*/
+    position: relative;
+    float: left;
+    background: #1d2b3c;
+    margin: 13px 0 0 9px;
+    padding-bottom: 8px;
+}
+
+.darkBox img
+{
+    border: solid #0a3867 2px;
+    margin: 8px 8px 0 8px;
+    float: left;
+}
+
+.darkBox input
+{
+    width: 125px;
+}
+
+.darkBox h2
+{
+    color: #d4bd27;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    line-height: normal;
+    text-decoration: none;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.darkBox ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    float: left;
+}
+
+.darkBox ul li
+{
+    color: #FFFFFF;
+    border-bottom: solid #455465 1px;
+    line-height: 20px !important;
+    color: #bdc2c8;
+}
+.darkBox ul li strong
+{
+    color: #fff;
+}
+
+
+.vs
+{
+    width: 47px;
+    height: 70px;
+    float: left;
+    font-size: 22px;
+    color: #fff;
+    padding: 64px 3px 0 3px;
+    text-align: center;
+}
+
+.matchups .links
+{
+    position: relative;
+    float: right;
+}
+
+.matchups .links a
+{
+    text-decoration: none;
+    color: #0477B7;
+    padding: 5px 10px 10px 25px;
+    margin-bottom: 10px;
+}
+
+.matchups .links a:hover
+{
+    text-decoration: underline;
+}
+
+.matchups .links a.save
+{
+    background: url(../images/save.gif) no-repeat left 5px;
+}
+
+.matchups .links a.matchup-cancel
+{
+    background: url(../images/weather_clouds.png) no-repeat left 5px;
+}
+
+.matchups .links a.matchup-delete
+{
+    background: url(../images/cross.png) no-repeat left 5px;
+}
+
+.matchups .links a.edit
+{
+    background: url(../images/edit.gif) no-repeat left 5px;
+}
+
+/*------------------- Spry Buttoms: GRAY -------------------------------*/
+.separtor
+{
+    width: 100%;
+    height: 10px;
+    float: left;
+}
+
+a.button
+{
+    background: url(../images/bg_button_a.gif) no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 25px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+a.button-right
+{
+    background: url(../images/bg_button_a.gif) no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: right;
+    font: normal 12px arial, sans-serif;
+    height: 25px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+
+a.button span, a.button-right span
+{
+    background: url(../images/bg_button_span.gif) no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 6px 0 5px 26px;
+}
+
+/*------------------- Spry Buttoms: BLUE -------------------------------*/
+
+a.blueButton
+{
+    background: url(../images/bluebg_button_a.gif) no-repeat scroll top right;
+    color: #fff;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 25px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+a.blueButton span
+{
+    background: url(../images/bluebg_button_span.gif) no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 6px 0 5px 17px;
+}
+/*------------------- Spry Buttoms: ORANGE-------------------------------*/
+
+a.orangeButton
+{
+    background: url(../images/orangebg_button_a.gif) no-repeat scroll top right;
+    color: #fff;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 25px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+a.orangeButton span
+{
+    background: url(../images/orangebg_button_span.gif) no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 6px 0 5px 17px;
+}
+
+/*------------------- Spry Buttoms: BACK-------------------------------*/
+
+a.backButton
+{
+    background: url(../images/bg_button_a.gif) no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 25px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+a.backButton span
+{
+    background: url(../images/backbg_button_span.gif) no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 6px 0 5px 26px;
+}
+
+/*------------------- Search a image-------------------------------*/
+/*.srcImage a{ background:'';}*/
+
+
+/*------------------- Jquery Tabs Styles --------------------------*/
+
+#fragment-10
+{
+}
+
+.frontReport
+{
+    width: 697px;
+    padding-left: 6px;
+    position: relative;
+    background: #efefef;
+    border-bottom: solid #c3c3c3 1px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+
+.frontReport ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.frontReport li
+{
+    display: inline;
+}
+
+.frontReport a
+{
+    text-decoration: none;
+    color: #1c4077;
+    padding: 3px 14px 3px 5px;
+}
+.frontReport a:hover
+{
+    text-decoration: underline;
+}
+
+.frontReport a.selected
+{
+    font-weight: bold;
+}
+
+#login-toggle
+{
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border: none !important;
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background: transparent url(../images/login-bg.gif) no-repeat scroll right top;
+    border-right: 0 none !important;
+    padding: 5px 25px 5px 15px !important;
+}
+
+#login-menu
+{
+    position: absolute;
+    left: 710px;
+    top: 70px;
+    z-index: 999;
+    display: none;
+    padding: 10px;
+}
+
+.centered
+{
+    position: relative; /*z-index:100;*/
+}
+
+.dataTable
+{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    background: #fff;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dataTable th
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 8px;
+}
+.dataTable td
+{
+    color: #3f4346 !important;
+    padding: 6px;
+}
+
+.dataTable .gridrow_alternate
+{
+    background: #f9f9f9 none repeat scroll 0 0;
+    border-bottom: solid #e0e0e0 1px;
+    border-top: solid #e0e0e0 1px;
+}
+
+#ver-zebra
+{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin: 0 20px 20px;
+    text-align: left;
+}
+
+.dataTable th
+{
+    color: #777777;
+    font-size: 12px;
+    padding: 8px 15px;
+    background: #e6e6e6;
+    font-weight: bold;
+}
+
+.dataTable td a
+{
+    color: #3e6fa3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.dataTable td a:hover
+{
+    text-decoration: underline;
+}
+
+.dataTable tr.lineas_tittle td
+{
+    color: #fff !important;
+    border-left: 1px solid #313b47;
+    border-right: 1px solid #313b47;
+    border-bottom: 1px solid #313b47;
+}
+
+.dataTable td.noRightBorder
+{
+    border-right: none;
+}
+
+.dataTable td.noLeftBorder
+{
+    border-left: none;
+}
+
+
+/*----------------------- Login Box -------------------------------------*/
+
+a.bgLogin
+{
+    background: url(../images/login-bg.gif) no-repeat left top;
+    padding: 5px 25px 5px 15px !important;
+    border-right: 0 !important;
+}
+a.bgLogin:hover
+{
+    background: url(../images/login-hover.gif) no-repeat left top;
+    color: #194081 !important;
+    text-decoration: none !important;
+}
+
+#login-menu
+{
+    width: 236px;
+    height: 191px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border: solid 1px #8099af;
+    background: #eaf3fa;
+    padding: 10px;
+}
+
+#my_chart
+{
+    z-index: 1;
+}
+
+#login-menu p
+{
+    padding-bottom: 10px;
+    color: #194081;
+}
+
+#login-menu input
+{
+    padding: 3px 5px;
+}
+#login-menu .left
+{
+    float: left;
+}
+
+#login-menu label
+{
+    display: block;
+    width: 73%;
+    text-align: left;
+}
+
+#login-menu input.text-input
+{
+    width: 220px;
+}
+
+/*------------------- Search a image-------------------------------*/
+
+form fieldset label
+{
+    width: 180px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+form fieldset input.short
+{
+    width: 50px;
+}
+
+form p
+{
+    margin-bottom: 10px;
+}
+
+a
+{
+    cursor: pointer;
+}
+
+/*----------------------- Estilos temporales -------------------------------------*/
+
+.gameResults input
+{
+    width: 35px;
+}
+
+/* ====================== Ticket Details ======================= */
+
+.TicketDetailRow_Status1
+{
+    color: #1262B2;
+}
+
+.TicketDetailRow_Status2
+{
+    color: #569F46;
+}
+
+.TicketDetailRow_Status3
+{
+    color: #BF0404;
+}
+
+.TicketDetailRow_Status4
+{
+    color: #FFBE00;
+}
+
+.dataTableTickets
+{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    background: #fff;
+    width: 100%;
+}
+
+.dataTableTickets th
+{
+    color: #000;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 8px;
+}
+.dataTableTickets td
+{
+    padding: 6px;
+}
+.dataTableTickets .gridrow_alternate
+{
+    background: #f9f9f9 none repeat scroll 0 0;
+    border-bottom: solid #e0e0e0 1px;
+    border-top: solid #e0e0e0 1px;
+}
+
+
+#copy-dialog label, #range-dialog label
+{
+    display: block;
+    text-align: left !important;
+}
+
+.range-input
+{
+    width: 70px;
+}
+
+.ui-hide
+{
+    display: none;
+}
+
+/*----------------------- Editable form -------------------------------------*/
+.field
+{
+    border: none;
+    background: transparent url(../images/ico_edit.gif) no-repeat 0 50%;
+    padding: 7px 0 7px 20px;
+    width: 300px;
+    line-height: 1em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.nonEditableField
+{
+    border: none;
+    padding: 7px 0 7px 20px;
+    width: 300px;
+    line-height: 1em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.field:focus, .focused
+{
+    border: 2px solid #dfdfdf;
+    padding: 5px;
+    background: #fff url(../images/bg_input.gif) repeat-x;
+    width: 300px;
+    line-height: 1em;
+    margin: 0;
+    outline: none;
+}
+#TicketTypeLimits .field
+{
+    width: 115px !important;
+}
+
+.rolesContainer
+{
+    padding-left: 150px;
+}
+/*----------------------- Secondary form actions -------------------------------------*/
+a.LinkAdd
+{
+    text-decoration: none;
+    background: url(../images/add.png) no-repeat 2px 5px;
+    color: #0189aa;
+    padding: 5px 10px 5px 22px;
+    font-size: 13px !important;
+}
+a.LinkAdd:hover
+{
+    color: #104994;
+}
+
+#filter-box label
+{
+    width: auto;
+}
+
+#filter-box .hasDatepicker
+{
+    width: 80px;
+}
+
+#filter-box input, #filter-box select
+{
+    margin-right: 10px;
+}
+
+#filter-box
+{
+    padding: 5px;
+    background-color: #F0F0F0;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+fieldset legend
+{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rightaligned
+{
+    text-align: right;
+    padding-right: 7px;
+}
+
+.line-wrapper
+{
+    margin-bottom: 15px;
+}
+
+table.standard-line
+{
+    width: 900px;
+    border-left: 1px solid #E5E5E5;
+}
+
+table.standard-line th
+{
+    background-color: #465465;
+    font-weight: bold;
+    border-left: 1px solid #ffffff;
+    color: #FFFFFF;
+}
+
+table.standard-line th.first
+{
+    border-left: none;
+}
+
+table.standard-line td
+{
+    border-bottom: 1px solid #E5E5E5;
+    border-right: 1px solid #E5E5E5;
+}
+
+table.standard-line td, table.standard-line th
+{
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.line-odd-value
+{
+    text-align: right;
+}
+
+.right-aligned
+{
+    text-align: right;
+}
+
+#legendHolder4totalsChart
+{
+    padding-top: 100px;
+}
+
+.even
+{
+    background: #EEEEEE;
+}
+
+#previous-step-data
+{
+    margin-bottom: 7px;
+}
+
+#quickadd-dialog label
+{
+    width: 150px;
+    margin-right: 3px;
+    display: block;
+    text-align: left;
+}
+
+#quickadd-dialog select
+{
+    width: 100%;
+}
+
+#quickadd-dialog p
+{
+    margin-bottom: 5px;
+}
+
+#quickadd-dialog .ui-icon
+{
+    float: left;
+    margin-right: 0.3em;
+}
+
+td.PlayerName
+{
+    text-align: left;
+    width: 120px;
+}
+
+.score-serializable
+{
+    width: 30px;
+}
+
+.shortScore
+{
+    width: 30px;
+}
+
+.hitRunsErrorsRowHeader
+{
+    width: 55px;
+    text-align: left;
+}
+
+.authorizeGamesFilterContainer
+{
+    float: right;
+}
+
+/*------------------------------- DropDown Items ---------------------------------*/
+
+.dropdown-wrapper
+{
+    width: 700px;
+    position: absolute;
+    left: 120px;
+    top: 155px;
+    background: #fff;
+    z-index: 200;
+    padding: 15px 25px 15px 0;
+    float: left;
+    border-bottom: solid #3b77ad 1px;
+    border-left: solid #3b77ad 1px;
+    border-right: solid #3b77ad 1px;
+}
+
+.dropdown-lottery
+{
+    width: 168px;
+    position: absolute;
+    left: 220px;
+    top: 155px;
+    background: #fff;
+    z-index: 200;
+    padding: 15px 15px 15px 0;
+    float: left;
+    border-bottom: solid #3b77ad 1px;
+    border-left: solid #3b77ad 1px;
+    border-right: solid #3b77ad 1px;
+}
+
+.dropdown-general
+{
+    width: 168px;
+    position: absolute;
+    left: 70px;
+    top: 155px;
+    background: #fff;
+    z-index: 200;
+    padding: 15px 15px 15px 0;
+    float: left;
+    border-bottom: solid #3b77ad 1px;
+    border-left: solid #3b77ad 1px;
+    border-right: solid #3b77ad 1px;
+}
+
+.dropdown-accounting
+{
+    width: 270px;
+    position: absolute;
+    left: 145px;
+    top: 155px;
+    background: #fff;
+    z-index: 200;
+    padding: 15px 15px 15px 0;
+    float: left;
+    border-bottom: solid #3b77ad 1px;
+    border-left: solid #3b77ad 1px;
+    border-right: solid #3b77ad 1px;
+}
+
+.dropdown-items
+{
+    width: auto;
+    position: relative;
+    float: left;
+    margin-left: 25px;
+}
+
+.dropdown-items h1
+{
+    font-size: 16px;
+    color: #2f6db8;
+    padding-bottom: 5px;
+}
+
+.dropdown-items ul
+{
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+.dropdown-items ul li
+{
+    line-height: 14px;
+}
+.dropdown-items ul li a
+{
+    font-size: 12px;
+    color: #4c4d4f;
+    display: block;
+    padding: 2px 0 2px 0;
+    text-decoration: none;
+}
+
+.dropdown-items ul li a:hover
+{
+    color: #f27b1f;
+}
+
+
+
+#jsddm li.selected a, #jsddm li.selected a:hover
+{
+    background: #fff;
+    color: #000;
+    z-index: 300;
+}
+
+/*------------------------------------ Left Navigation --------------------------------------------------*/
+
+#verticalNav
+{
+    width: 208px;
+    position: relative;
+    float: left;
+    margin-top: 10px;
+}
+
+.leftNavigation
+{
+    width: 208px;
+    position: relative;
+    float: left;
+    border-bottom: solid #d2d2d2 1px;
+    border-top: solid #fff 1px;
+    margin: 0 0 0 14px;
+    padding-bottom: 10px;
+}
+
+.leftNavigation h1
+{
+    color: #2e6eb6;
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    padding: 10px 10px 3px 24px;
+    background: url(../images/left-menu-icons.gif) no-repeat left 11px;
+}
+
+h1.juego
+{
+    background: url(../images/left-menu-icons.gif) no-repeat left -44px;
+}
+
+h1.deporte
+{
+    background: url(../images/left-menu-icons.gif) no-repeat left -96px;
+}
+
+h1.calculo
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 2px -150px;
+}
+
+h1.apuestas
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 1px -200px;
+}
+
+.leftNavigation ul
+{
+    color: #A4BF00;
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+.leftNavigation ul li
+{
+    line-height: 18px;
+}
+.leftNavigation ul li a
+{
+    font-size: 12px;
+    color: #595c63;
+    display: block;
+    padding: 2px 0 2px 26px;
+    text-decoration: none;
+}
+
+.leftNavigation ul li a:hover
+{
+    background: #d9d9d9;
+}
+
+h1.general
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 1px -273px;
+}
+
+h1.accounting
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 1px -342px;
+}
+
+h1.lottery
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 1px -420px;
+}
+
+/*-------------------------------- Ajustes para el Dashboard ----------------------------------------*/
+
+.top-wide
+{
+    background: url(../images/curves-top-clean.gif) no-repeat left top !important;
+}
+
+.bot-wide
+{
+    background: url(../images/curves-bot-clean.gif) no-repeat left bottom !important;
+}
+
+.center-wide
+{
+    background: url(../images/curves-center-clean.gif) repeat-y left top !important;
+}
+
+.wide-cont
+{
+    width: 925px !important;
+}
+
+h2.dashboard-heading
+{
+    margin-top: 20px;
+}
+
+/*-------------------------------- Addins ----------------------------------------*/
+.action
+{
+    font-weight: bold;
+    color: #224499 !important;
+}
+
+/*----------------------------- Game Redux Listing ------------------------------*/
+#ReduxListLineContainer
+{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background: white;
+    padding: 10px 10px 10px 10px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border: 2px solid #E67411;
+}
+
+#ReduxListLineToolbar
+{
+    display: block;
+}
+
+#ReduxListLineToolbar span.ui-icon
+{
+    display: block;
+    float: right;
+}
+
+#ReduxListLineContainer input
+{
+    width: 50px;
+}
+
+/*----------------------------- Two columns layout ------------------------------*/
+.leftColumn
+{
+    width: 430px;
+    position: relative;
+    float: left;
+    margin-top: 10px;
+    padding-top: 14px;
+    padding-left: 20px;
+}
+
+.rightColumn
+{
+    width: 470px;
+    position: relative;
+    float: right;
+    margin-top: 10px;
+    padding: 14px 20px 20px;
+}
+
+.authorizeMatchupsContainer, .authorizeGamesContainer
+{
+    padding: 5px;
+    background-color: #F0F0F0;
+    margin-bottom: 25px;
+    position: relative;
+    height: 65px;
+}
+
+.authorizeMatchupsContainer .datepicker, .authorizeGamesContainer .datepicker
+{
+    width: 80px;
+}
+
+/*--------------------------- Two columns layout small ----------------------------*/
+.twoColumnsSmall{
+			
+}
+.twoColumnsSmall-left{			
+	width:480px;
+	/*position:relative;*/
+	float: left;
+}
+.twoColumnsSmall-right{
+	width:220px;
+	/*position:relative;*/
+	float: right;
+}
+.twoColumnsSmall-bottomCenter{
+	clear:both;
+}
+
+/*--------------------------- Related Entities ----------------------------*/
+#relatedEntitiesContainer
+{
+    margin-left: 10px;
+    padding-left: 20px;
+    height: auto;
+}
+
+#rightColumnLoader
+{
+    margin-left: 100px;
+}
+
+#relatedEntitiesContainer .subtitle
+{
+    color: #888;
+    font-family: :Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+#relatedEntitiesContainer li
+{
+    list-style: none;
+    color: #222;
+    font-family: :Arial, Helvetica, sans-serif;
+    font-size: 1.0em;
+}
+

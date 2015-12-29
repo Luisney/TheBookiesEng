@@ -1,0 +1,150 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="/content-Type" content="text/html; charset=utf-8" />
+    <asp:ContentPlaceHolder runat="server" ID="MetaRefresh">
+    </asp:ContentPlaceHolder>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/Content/themes/redmond/jquery-ui-1.7.2.custom.css"
+        type="text/css" />
+    <link rel="stylesheet" href="/Content/css/main.css" type="text/css" />
+    <script type="text/javascript" src="/Content/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#accordion").accordion({ autoHeight: false });
+
+            // This is ugly, but works
+            $('#accordion').find('.selected')
+	                        .parent().parent()
+	                        .prev()
+	                        .click();
+
+            $("#login-toggle").click(function () {
+                $('#login-menu').toggle("fast");
+            });
+
+            //$('.clock').imclock();
+
+            // Hide unused menu sections
+            $('.leftNavigation .menuSection').each(function (index, domElement) {
+                if ($(domElement).find('li').length == 0)
+                    $(domElement).hide();
+            });
+
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="Assets" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    </title>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-11919266-2']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    <%
+        Html.RenderPartial("SessionAlert"); %>
+    <div class="shapes">
+        <div class="centered">
+            <div class="wrapper">
+                <div id="logo">
+                    <a href="/">
+                        <img src="/Content/images/logo.gif" alt="logo" /></a></div>
+                <%
+                    using (Html.BeginForm("LogOn", "Account"))
+                    {%>
+                <fieldset id="login-menu">
+                    <p>
+                        <label for="username">
+                            Usuario:</label>
+                        <%=Html.TextBox("username", "", new {@class = "text-input"})%>
+                    </p>
+                    <p>
+                        <label for="password">
+                            <%=Html.Encode("Contraseña:")%></label>
+                        <%=Html.Password("password", "", new {@class = "text-input"})%>
+                    </p>
+                    <p>
+                        <%=Html.CheckBox("rememberMe")%>
+                        <strong>Recuerdame en este equipo</strong>
+                    </p>
+                    <p>
+                        <input type="submit" value="Ingresar" />
+                    </p>
+                </fieldset>
+                <%
+                    }%>
+                <div id="topLinks">
+                    <ul>
+                        <li>
+                            <%
+                                if (!Context.User.Identity.IsAuthenticated)
+                                {%>
+                            <a id="login-toggle">Ingresar</a>
+                            <%
+                                }%>
+                            <%
+                                else
+                                {%>
+                            <div class="clock">
+                            </div>
+                            <div id="time_href" style="display: none">
+                                /Home/Now</div>
+                            <%="Bienvenido de vuelta " + Context.User.Identity.Name + " "%>
+                            <%=Html.ActionLink("Perfil", "ChangePassword", "Account", new { @area = "root" }, null)%>
+                            <%=Html.ActionLink("Salir", "LogOff", "Account", new { @area = "root" }, null)%>
+                            <%
+                                }%>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear">
+                </div>
+                <!--Start: Horizontal Menu-->
+                <asp:ContentPlaceHolder ID="MainAppMenu" runat="server">
+                    <% Html.RenderPartial("MainAppMenu"); %>
+                </asp:ContentPlaceHolder>
+                <!--End mainNav-->
+                <!--End menu-->
+                <div class="centerWrapper">
+                    <div class="top">
+                        <div class="bot">
+                            <!--Start: verticalNav-->
+                            <div id="verticalNav">
+                                <asp:ContentPlaceHolder ID="ContextMenu" runat="server" />
+                                <asp:ContentPlaceHolder ID="ExtraSideBar" runat="server" />
+                            </div>
+                            <!--End: verticalNav-->
+                            <div class="content">
+                                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                            </div>
+                            <!--End /content-->
+                        </div>
+                        <!--End bot-->
+                    </div>
+                    <!--End top-->
+                </div>
+                <!--End centerWrapper-->
+                <div id="footer">
+                    © 2012 TecProv International. Todos los derechos reservados -
+                    <%= Html.Encode( ConfigurationManager.AppSettings [ "Application.InstanceName" ] )%></div>
+            </div>
+            <!--End wrapper-->
+        </div>
+        <!--End centered-->
+    </div>
+    <!--End shapes-->
+</body>
+</html>

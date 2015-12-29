@@ -1,0 +1,40 @@
+﻿/*------------------- Spry Buttoms: ORANGE-------------------------------*/
+
+a.orangeButton
+{
+    background: url(../images/orangebg_button_a.gif) no-repeat scroll top right;
+    color: #fff;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 25px;
+    margin-right: 6px;
+    padding-right: 18px;
+    text-decoration: none;
+}
+
+a.orangeButton span
+{
+    background: url(../images/orangebg_button_span.gif) no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 6px 0 5px 17px;
+}
+
+#reporte
+{
+    width: 345px;
+    height: 301px;
+    float: left;
+    overflow: auto;
+}
+
+.clear
+{
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}

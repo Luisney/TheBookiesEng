@@ -1,0 +1,22 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/Main.Master" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Assets" runat="server">
+    <asp:ContentPlaceHolder ID="Assets" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MetaRefresh" runat="server">
+    <asp:ContentPlaceHolder ID="MetaRefresher" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="TitleContent" runat=server>
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ContextMenu" runat="server">
+    <% Html.RenderPartial("ContextMenu"); %>
+</asp:Content>
+

@@ -1,0 +1,716 @@
+@charset "utf-8";
+/* CSS Document */
+#restricted-form p
+{
+    margin-bottom: 10px;
+    text-align: right;
+    width: 350px;
+}
+
+.general-form p
+{
+    margin-left: 35px;
+    margin-bottom: 10px;
+    text-align: right;
+    width: 360px;
+}
+
+#restricted-form p input[type="text"], .num-bar p input[type="text"], .general-form p input[type="text"], .general-form p input[type="text"]
+{
+    width: 190px;
+}
+
+#restricted-form p select, .num-bar p select
+{
+    width: 195px;
+}
+
+#restricted-form input[type="checkbox"]
+{
+    margin-left: 154px;
+}
+
+.topAligned
+{
+    vertical-align: top;
+}
+
+.num-bar
+{
+    width: 98%;
+    padding: 15px 0 0 10px;
+    height: 33px;
+    float: left;
+    background: #efefef;
+    border: solid #d3d3d3 1px;
+}
+
+.num-bar a
+{
+    background: url(../images/plus-circle.gif) no-repeat left top;
+    padding-left: 18px;
+    text-decoration: none;
+    color: #0083b2;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.num-bar a:hover
+{
+    text-decoration: underline;
+}
+
+/*----------------------- TABLE STYLES ------------------------*/
+
+.num-box
+{
+    border-collapse: collapse;
+    text-align: left;
+}
+.num-box th
+{
+    font-size: 14px;
+    background: #8a98b0;
+    font-weight: normal;
+    padding: 5px 8px;
+    color: #FFFFFF;
+    text-align: left;
+}
+.num-box td
+{
+    color: #000;
+    padding: 8px;
+}
+.num-box .odd
+{
+    background: #f5f4f4 none repeat scroll 0 0;
+    border-bottom: solid #e0e0e0 1px;
+    border-top: solid #e0e0e0 1px;
+}
+
+.num-box input[type="text"]
+{
+    width: 190px;
+}
+.num-box select
+{
+    width: 155px;
+}
+
+.num-box strong
+{
+    font-size: 14px;
+    background: url(../images/edit.gif) no-repeat left top;
+    padding-left: 20px;
+}
+
+.statusMessage
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+/*---------- LINKS num-box ---------------*/
+
+.num-box a
+{
+    background: url(../images/remove.gif) no-repeat 80px 3px;
+    padding-left: 100px;
+    text-decoration: none;
+    color: #0083b2;
+    margin-left: 10px;
+}
+
+.num-box a:hover
+{
+    text-decoration: underline;
+}
+
+.num-box a.save
+{
+    background: url(../images/save.gif) no-repeat 8px top;
+    padding-left: 30px;
+}
+.num-box a.cancel
+{
+    background: url(../images/cancel.gif) no-repeat left 1px;
+    padding-left: 19px;
+}
+
+a.volver
+{
+    background: url(../images/blue-arrow.gif) no-repeat left bottom;
+    padding-left: 19px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #3a89c8;
+}
+
+a.volver:hover
+{
+    text-decoration: underline;
+}
+
+a.buscar-imagen
+{
+    background: url(../images/src-image.gif) no-repeat left 3px;
+    padding-left: 20px;
+    text-decoration: none;
+    margin-left: 200px;
+    color: #3a89c8;
+    clear: both;
+}
+
+a.buscar-imagen:hover
+{
+    text-decoration: underline;
+}
+
+#restricted-form .orangeButton
+{
+    margin-left: 155px;
+}
+
+.general-form p img
+{
+    margin-right: 105px;
+}
+
+.general-form .marginSelect
+{
+    margin-right: 65px;
+}
+
+.general-form .days
+{
+    margin: 8px 0 8px 196px;
+}
+
+.selectField select
+{
+    width: 195px;
+}
+
+.general-form .orangeButton
+{
+    margin-left: 165px;
+}
+
+/*-------------------------------- Ajustes para el Dashboard ----------------------------------------*/
+
+.top-wide
+{
+    background: url(../images/curves-top-clean.gif) no-repeat left top !important;
+}
+
+.bot-wide
+{
+    background: url(../images/curves-bot-clean.gif) no-repeat left bottom !important;
+}
+
+.center-wide
+{
+    background: url(../images/curves-center-clean.gif) repeat-y left top !important;
+}
+
+.wide-cont
+{
+    width: 925px !important;
+}
+
+/*------------------------- Contenedores de Graficos - Dashboard ----------------------------------------*/
+
+.resultBox-Wrap
+{
+    width: 920px;
+    position: relative; /*float:left;*/
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.resultBox-Wrap span
+{
+    font-size: 18px;
+    padding-left: 12px;
+    padding-bottom: 5px;
+    float: left;
+}
+
+.result-Box
+{
+    width: 460px;
+    position: relative;
+    float: left;
+    border: solid #d9d9d9 1px;
+    background: #fff;
+}
+
+.result-Box h4
+{
+    background: #4c72b1;
+    padding: 9px 0 6px 11px;
+    margin-bottom: 1px;
+    color: #FFFFFF;
+}
+
+.resultsTable
+{
+    width:   445px;
+    border-collapse: collapse;
+    text-align: left;
+}
+.resultsTable th
+{
+    font-size: 14px;
+    background: #8a98b0;
+    font-weight: normal;
+    padding: 5px 8px;
+    color: #FFFFFF;
+    text-align: left;
+}
+.resultsTable td
+{
+    color: #000;
+    padding: 8px;
+}
+
+.resultsTable tfoot
+{
+    background: #e6eff6 none repeat scroll 0 0;
+    border-bottom: solid #e6eff8 1px;
+}
+
+.noMarginRight
+{
+    margin-right: 0 !important;
+}
+
+
+
+/*-------------------- Dashboard Estadísticas -----------------------------*/
+
+.statistics-Box
+{
+    width: 445px;
+    position: relative;
+    float: left;
+    border: solid #d9d9d9 1px;
+    background: #fff;
+    margin-right: 20px;
+}
+
+.statistics-Box h4
+{
+    background: #4c72b1;
+    padding: 9px 0 6px 11px;
+    margin-bottom: 1px;
+    color: #FFFFFF;
+}
+
+
+
+/*------------------------------------ Left Navigation --------------------------------------------------*/
+
+.leftNav-Wrapper
+{
+    width: 208px;
+    position: relative;
+    float: left;
+    margin-top: 10px;
+}
+
+.leftNavigation
+{
+    width: 208px;
+    position: relative;
+    float: left;
+    border-bottom: solid #d2d2d2 1px;
+    border-top: solid #fff 1px;
+    margin: 0 0 0 14px;
+    padding-bottom: 10px;
+}
+
+.leftNavigation h1
+{
+    color: #2e6eb6;
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    padding: 10px 10px 3px 24px;
+    background: url(../images/left-menu-icons.gif) no-repeat left 11px;
+}
+
+h1.juego
+{
+    background: url(../images/left-menu-icons.gif) no-repeat left -44px;
+}
+
+h1.deporte
+{
+    background: url(../images/left-menu-icons.gif) no-repeat left -96px;
+}
+
+h1.calculo
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 2px -150px;
+}
+
+h1.apuestas
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 1px -200px;
+}
+
+h1.general
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 1px -273px;
+}
+
+h1.accounting
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 1px -342px;
+}
+
+h1.lottery
+{
+    background: url(../images/left-menu-icons.gif) no-repeat 1px -420px;
+}
+
+
+.leftNavigation ul
+{
+    color: #A4BF00;
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+.leftNavigation ul li
+{
+    line-height: 18px;
+}
+.leftNavigation ul li a
+{
+    font-size: 12px;
+    color: #595c63;
+    display: block;
+    padding: 2px 0 2px 26px;
+    text-decoration: none;
+}
+
+.leftNavigation ul li a:hover
+{
+    background: #d9d9d9;
+}
+
+
+/*------------------------------- DropDown Items ---------------------------------*/
+
+.dropdown-wrapper
+{
+    width: 685px;
+    position: absolute;
+    left: 120px;
+    top: 155px;
+    background: #fff;
+    z-index: 200;
+    padding: 15px 25px 15px 0;
+    float: left;
+    border-bottom: solid #3b77ad 1px;
+    border-left: solid #3b77ad 1px;
+    border-right: solid #3b77ad 1px;
+}
+
+.dropdown-lottery
+{
+    width: 168px;
+    position: absolute;
+    left: 220px;
+    top: 155px;
+    background: #fff;
+    z-index: 200;
+    padding: 15px 15px 15px 0;
+    float: left;
+    border-bottom: solid #3b77ad 1px;
+    border-left: solid #3b77ad 1px;
+    border-right: solid #3b77ad 1px;
+}
+
+.dropdown-general
+{
+    width: 168px;
+    position: absolute;
+    left: 70px;
+    top: 155px;
+    background: #fff;
+    z-index: 200;
+    padding: 15px 15px 15px 0;
+    float: left;
+    border-bottom: solid #3b77ad 1px;
+    border-left: solid #3b77ad 1px;
+    border-right: solid #3b77ad 1px;
+}
+
+.dropdown-items
+{
+    width: auto;
+    position: relative;
+    float: left;
+    margin-left: 25px;
+}
+
+.dropdown-items h1
+{
+    font-size: 16px;
+    color: #2f6db8;
+    padding-bottom: 5px;
+}
+
+.dropdown-items ul
+{
+    list-style-image: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 0;
+}
+
+.dropdown-items ul li
+{
+    line-height: 14px;
+}
+.dropdown-items ul li a
+{
+    font-size: 12px;
+    color: #4c4d4f;
+    display: block;
+    padding: 2px 0 2px 0;
+    text-decoration: none;
+}
+
+.dropdown-items ul li a:hover
+{
+    color: #f27b1f;
+}
+
+/*--------------------------------- Reports ----------------------------------*/
+
+.reports-wrapper
+{
+    width: 700px;
+    position: relative;
+    float: left;
+    padding-bottom: 25px;
+}
+
+.reports-wrapper h2
+{
+    color: #3e3e3e;
+    font-size: 16px;
+    padding-bottom: 5px;
+    width: 600px;
+    float: left;
+    display: block;
+}
+
+.reports-wrapper ul
+{
+    /*width:210px;*/
+    width: 300px;
+    margin: 0;
+    float: left;
+    padding: 0 20px 0 0;
+}
+
+.reports-wrapper li
+{
+    list-style-type: none;
+    float: none;
+    margin-right: 15px;
+    padding-left: 11px;
+    background: url(../images/blue-bullet.gif) no-repeat left 6px;
+}
+
+.reports-wrapper li a
+{
+    text-decoration: none;
+    color: #3374aa;
+    line-height: 20px;
+}
+
+.reports-wrapper ul li a:hover
+{
+    text-decoration: underline;
+}
+
+.filter-report
+{
+    margin-bottom: 15px;
+    width: 690px;
+    float: left;
+    position: relative;
+    padding: 5px 0 15px 10px;
+    background: #efefef;
+    border: solid #d3d3d3 1px;
+}
+
+.filter-report select
+{
+    width: 181px;
+    padding: 2px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.filter-report #autoRefreshCheckbox
+{
+    width: 15px;
+    padding: 2px;
+    padding-top: 10px;
+}
+
+.filter-report input
+{
+    width: 181px;
+    padding: 2px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+select.year
+{
+    width: 60px;
+}
+
+.filter-report .links
+{
+    margin-right: 10px;
+    margin-top: 15px;
+    color: #3e3e3e;
+    float: left;
+    width: 670px;
+}
+
+.filter-report .orangeButton
+{
+    float: right;
+}
+
+.filter-report strong
+{
+    margin-right: 10px;
+}
+
+.filter-report a.excel-Icon
+{
+    background: url(../images/excel-icon.gif) no-repeat left top;
+    padding-left: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #0278a3;
+}
+
+.filter-report a.excel-Icon:hover
+{
+    text-decoration: underline;
+}
+
+.filter-report a.pdf-Icon
+{
+    background: url(../images/pdf-icon.gif) no-repeat left top;
+    padding-left: 20px;
+    text-decoration: underline;
+    text-decoration: none;
+    color: #0278a3;
+}
+
+.filter-report a.pdf-Icon:hover
+{
+    text-decoration: underline;
+}
+
+.loading-report
+{
+    margin-left: 260px;
+    width: 250px;
+    float: left;
+    position: relative;
+}
+
+/*--------------------------------- Scrutinize ----------------------------------*/
+div.scrutinize-days
+{
+    margin-left: 20px;
+}
+
+div.scrutinize-day
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+div.scrutinize-day .eventStamp {
+    float:left;
+    font-family:Arial;
+    font-size:large;
+    font-weight:bolder;
+    margin-top:20px;
+    padding-right:10px;
+    text-align:right;
+    width:120px;
+    color:#C0C0C0;
+}
+
+div.scrutinize-day .eventContent {
+    float:left;
+}
+
+div.scrutinize-day .grayText {
+    float:left;
+    font-family:helvetica;
+    margin-top:7px;
+    text-align:left;
+    color:#999;
+}
+
+div.scrutinize-day .highlight {
+    background-color: gray;
+}
+
+div#scrutinyStatus {
+    height: 20px;
+}
+
+div#scrutinyStatus {
+    height: 20px;
+}
+
+/*--------------------------------- Lotto bets ----------------------------------*/
+.betDetailSubtitle
+{
+    color: #555;
+    font-family:Georgia;
+    font-style:italic;
+    font-size: 1.1em;
+}
+
+/*--------------------------------- Value payment ----------------------------------*/
+#exchangeFactor
+{
+    width: 30px;
+    float: right;
+    text-align: center;
+    margin-left: 3px;
+}
+
+#exchangeButton
+{
+    float: right;
+    cursor: pointer;
+}
+
+#exchangeContainer
+{
+    width: 100%;
+}
+

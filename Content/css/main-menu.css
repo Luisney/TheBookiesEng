@@ -1,0 +1,97 @@
+@charset "utf-8";
+.mainNav
+{
+    width: 966px;
+    height: 38px;
+    float: left;
+    background: #102b55 url(../images/menu-rep.gif) repeat-x left top;
+}
+.mainNav .rightCorner
+{
+    width: 966px;
+    height: 38px;
+    float: left;
+    background: url(../images/right-corner.gif) no-repeat right top;
+}
+
+.mainNav .leftCorner
+{
+    width: 966px;
+    height: 38px;
+    float: left;
+    background: url(../images/left-corner.gif) no-repeat left top;
+    color: #FFFFFF;
+}
+
+
+/*------------------------- Menu styles -----------------------------------*/
+#jsddm
+{
+    margin: 0 0 0 10px;
+    padding: 1px 0 0 0;
+}
+
+#jsddm li
+{
+    float: left;
+    list-style: none;
+    font-size: 1em;
+    line-height: normal; /*  border-right:solid #473e3d 1px; 		border-left:solid #59504e 1px;*/
+    background: url(../images/line-menu.gif) no-repeat right 2px;
+}
+
+#jsddm li a
+{
+    display: block;
+    padding: 10px 12px 10px 12px;
+    text-decoration: none;
+    color: #EAFFED;
+}
+
+/*------------------------- DropDown menu -----------------------------------*/
+.ddm-wrapper
+{
+    display: none;
+}
+
+#jsddm li a:hover
+{
+    background: url(../images/hover.gif) no-repeat right 1px;
+    color: #FFFFFF;
+}
+
+#jsddm li ul
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+    border-left: 1px solid #d6d6d7;
+    border-right: 1px solid #d6d6d7;
+    border-bottom: 1px solid #d6d6d7;
+    z-index: 600;
+}
+
+#jsddm li ul li
+{
+    float: none;
+    display: inline;
+    border-right: none;
+    border-left: none;
+    z-index: 500;
+}
+
+#jsddm li ul li a
+{
+    width: auto;
+    background: #fff;
+    color: #24313C;
+    padding: 8px 40px 8px 12px;
+    border-top: 1px solid #d6d6d7;
+}
+
+#jsddm li ul li a:hover
+{
+    background: #e8e8e8;
+    color: #24313C;
+}

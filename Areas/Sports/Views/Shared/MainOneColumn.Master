@@ -1,0 +1,18 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" MasterPageFile="~/Views/Shared/MainOneColumn.Master" %>
+<%@ Import Namespace="Gambling.Models"%>
+<%@ Import Namespace="Gambling.Helpers" %>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Assets" runat="server">
+    <asp:ContentPlaceHolder ID="Assets" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+
