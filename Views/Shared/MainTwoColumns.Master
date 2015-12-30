@@ -65,27 +65,27 @@
             <div class="wrapper">
                 <div id="logo">
                     <a href="#">
-                        <img src="/Content/images/logo.gif" alt="logo" /></a></div>
+                        <img src="/Content/images/logo.png" alt="logo" /></a></div>
                 <%
                     using( Html.BeginForm( "LogOn", "Account" ) )
                     {%>
                 <fieldset id="login-menu">
                     <p>
                         <label for="username">
-                            Usuario:</label>
+                            User:</label>
                         <%=Html.TextBox("username", "", new {@class = "text-input"})%>
                     </p>
                     <p>
                         <label for="password">
-                            <%=Html.Encode("Contraseña:")%></label>
+                            <%=Html.Encode("Password:")%></label>
                         <%=Html.Password("password", "", new {@class = "text-input"})%>
                     </p>
                     <p>
                         <%=Html.CheckBox("rememberMe")%>
-                        <strong>Recuerdame en este equipo</strong>
+                        <strong>Remember Me</strong>
                     </p>
                     <p>
-                        <input type="submit" value="Ingresar" />
+                        <input type="submit" value="Login" />
                     </p>
                 </fieldset>
                 <%
@@ -96,7 +96,7 @@
                             <%
                                 if( !Context.User.Identity.IsAuthenticated )
                                 {%>
-                            <a id="login-toggle">Ingresar</a>
+                            <a id="login-toggle">Login</a>
                             <%
                                 }%>
                             <%
@@ -106,9 +106,9 @@
                             </div>
                             <div id="time_href" style="display: none">
                                 /Home/Now</div>
-                            <%="Bienvenido de vuelta " + Context.User.Identity.Name + " "%>
+                            <%="Welcome back " + Context.User.Identity.Name + " "%>
                             <%=Html.ActionLink("Perfil", "ChangePassword", "Account", new { @area = "root" }, null)%>
-                            <%=Html.ActionLink("Salir", "LogOff", "Account", new { @area = "root" }, null)%>
+                            <%=Html.ActionLink("Exit", "LogOff", "Account", new { @area = "root" }, null)%>
                             <%
                                 }%>
                         </li>
@@ -142,7 +142,7 @@
                 </div>
                 <!--End centerWrapper-->
                 <div id="footer">
-                    © 2010 TecProv International. Todos los derechos reservados - <%= Html.Encode( ConfigurationManager.AppSettings [ "Application.InstanceName" ] )%></div>
+                    © 2015 TecProv International. All rights reserved - <%= Html.Encode( ConfigurationManager.AppSettings [ "Application.InstanceName" ] )%></div>
             </div>
             <!--End wrapper-->
         </div>

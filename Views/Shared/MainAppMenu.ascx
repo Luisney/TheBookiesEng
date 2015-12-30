@@ -57,9 +57,7 @@
             <ul id="jsddm">
                 <li style="border-left: none"><a href="<%=Url.Action("Index", "Home", new { @area="root" })%>">Dashboard</a></li>
                 <li><a href="#dropdown-general">General</a></li>
-                <li><a href="#dropdown-accounting">Contabilidad</a></li>
                 <li><a href="#dropdown-lottery">Lotería</a></li>
-                <li><a href="#dropdown-recharges">Recargas</a></li>
                 <li><a href="<%=Url.Action("Index", "Report", new { @area="Accounting" })%>">Reportes</a></li>
 
             </ul>
@@ -123,15 +121,12 @@
         <h1>Lotería</h1>
         <ul>
             <%= Html.MenuItem("Loterías", "Index", "Lotto", new{ @area="Lottery"}, null )%>
-            <%= Html.MenuItem("Tipos de apuesta", "Index", "PlayType", new { @area = "Lottery" }, null)%>
-            <%= Html.MenuItem("Apuestas Incompatibles", "Index", "IncompatibleBet", new{ @area="Lottery"}, null )%>
             <%= Html.MenuItem("Resultados", "Index", "Result", new { @area = "Lottery" }, null)%>
             <%= Html.MenuItem("Números Restringidos", "Index", "RestrictedNumber", new { @area = "Lottery" }, null)%>
             <%= Html.MenuItem("Perfiles de Comisión", "Index", "Commission", new { @area = "Lottery" }, null)%>
             <%= Html.MenuItem("Perfiles de Valores a Pagar", "Index", "ValuePayment", new { @area = "Lottery" }, null)%>
             <%= Html.MenuItem("Perfiles de Limites", "Index", "LimitBetType", new { @area = "Lottery" }, null)%>
             <%= Html.MenuItem("Tickets", "Index", "LottoBet", new { @area = "Lottery" }, null)%>
-            <%= Html.MenuItem("Botes", "Index", "Surplus", new { @area = "Lottery" }, null)%>
             <%= Html.MenuItem("Escrutinio", "Index", "BetScrutiny", new { @area = "Lottery" }, null)%>
             <%= Html.MenuItem("Limpiar Escrutinio", "Clean", "Scrutiny", new { @area = "Lottery" }, null)%>
         </ul>
@@ -151,10 +146,8 @@
             <h1>
                 General</h1>
             <%= Html.MenuItem("Usuarios", "Index", "Account", new { @area = "root" }, null)%>
-            <%= Html.MenuItem("Apostadores", "Index", "Gambler", new { @area = "root" }, null)%>
             <%= Html.MenuItem("Consorcios", "Index", "Company", new { @area = "root" }, null)%>
             <%= Html.MenuItem("Centros de acopio", "Index", "StoringCenter", new { @area = "root" }, null)%>
-            <%= Html.MenuItem("Rutas", "Index", "Route", new { @area = "root" }, null)%>
             <%= Html.MenuItem("Bancas", "Index", "SportBook", new { @area = "root" }, null)%>
             <%= Html.MenuItem("Terminales", "Index", "Terminal", new { @area = "root" }, null)%>
             <%= Html.MenuItem("Registro Rapido de Banca", "RegisterSportBook", "Quick", new { @area = "root" }, null)%>
